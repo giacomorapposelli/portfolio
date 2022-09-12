@@ -70,7 +70,7 @@ const ProjectDetails = ({
                             >
                                 Link
                                 <div className={styles.icon}>
-                                    <Image src={openIcon} />
+                                    <Image src={openIcon} alt={'open'} />
                                 </div>
                             </a>
                         )}
@@ -83,17 +83,17 @@ const ProjectDetails = ({
                             >
                                 GitHub
                                 <div className={styles.icon}>
-                                    <Image src={gitHubIcon} />
+                                    <Image src={gitHubIcon} alt={'GitHub'} />
                                 </div>
                             </a>
                         )}
                     </Fade>
                 </div>
                 <div className={styles.arrowRight} onClick={nextProject}>
-                    <Image src={arrow} layout={'fill'} />
+                    <Image src={arrow} layout={'fill'} alt={'next'} />
                 </div>
                 <div className={styles.arrowLeft} onClick={prevProject}>
-                    <Image src={arrow} layout={'fill'} />
+                    <Image src={arrow} layout={'fill'} alt={'prev'} />
                 </div>
             </div>
         </section>
