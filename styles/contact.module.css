@@ -1,0 +1,81 @@
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+}
+
+.formContainer p {
+    font-size: 1.2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form input,
+.form textarea {
+    width: 20rem;
+    padding: 10px;
+    border-radius: 0.5rem;
+    border: 3px solid var(--sec-decor-color);
+    background: transparent;
+    outline: none;
+    margin-bottom: 1rem;
+    color: white;
+    transition: border 0.4s ease-in-out;
+    z-index: 2;
+    font-family: var(--main-font-family);
+}
+
+.form input:focus,
+.form textarea:focus {
+    border: 3px solid var(--main-decor-color);
+    background-color: transparent;
+}
+
+.form button {
+    background-color: transparent;
+    font-family: var(--main-font-family);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: color 0.4s ease-in-out, background 0.4s ease-in-out;
+    z-index: 2;
+}
+
+.form button:hover {
+    color: var(--main-background);
+    background: var(--main-decor-color);
+}
+
+.form button:focus {
+    outline: none;
+    border: none;
+}
+
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:hover,
+.form input:-webkit-autofill:focus,
+.form input:-webkit-autofill:active {
+    border: 3px solid var(--main-decor-color);
+    -webkit-text-fill-color: var(--main-fonts-color);
+    -webkit-box-shadow: 0 0 0px 1000px var(--main-background) inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+@media (max-width: 600px) {
+    .form input,
+    .form textarea {
+        width: 15rem;
+    }
+
+    .success {
+        font-size: 1rem;
+    }
+}
